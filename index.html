@@ -3,42 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>พัฒน์นรี</title>
+    <title>Portfolio ของฉัน</title>
     <style>
+        /* ตกแต่งหน้าเว็บให้ดูสวยงามเบื้องต้น */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #ffabea;
-            color: #333;
+            font-family: Arial, sans-serif;
             text-align: center;
-            padding: 50px;
+            background-color: #f4f4f9;
+            margin-top: 50px;
         }
-        .card {
-            background: pink;
-            padding: 30px;
-            border-radius: 50px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            max-width: 500px;
-            margin: 0 auto;
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%; /* ทำให้รูปเป็นวงกลม */
+            object-fit: cover;
+            border: 3px solid #333;
         }
-        h1 { color: #2c3e50; }
-        p { font-size: 18px; line-height: 1.6; }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
 
-    <div class="card">
-        <h1>ยินดีต้อนรับสู่โปรไฟล์ของฉัน 👋</h1>
-        <p>สวัสดีค่ะ! ตัวดิฉันนั้นชื่อ <strong>พัฒน์นรี (Patnaree)</strong></p>
-        <p>ขณะนี้กำลังศึกษา/สนใจด้าน Chinese Program</p>
-        <p>นี่คือเว็บไซต์แรกของฉันที่โฮสต์บน GitHub Pages!</p>
+    <!-- เปลี่ยนรูปภาพตรงนี้ โดยเปลี่ยน profile.jpg เป็นชื่อไฟล์รูปของคุณ -->
+    <img src="profile.jpg" alt="รูปโปรไฟล์ของฉัน" class="profile-img">
 
-<a href="portfolio.html" style="display:inline-block; 
-    background:#3498db; 
-    color:white;
-    padding:10px 20px; 
-    text-decoration:none;
-    border-radius:5px;
-    margin-top:15px;">👉 ดูแฟ้มสะสมงาน</a>
+    <!-- เปลี่ยนชื่อและนามสกุลของคุณตรงนี้ -->
+    <h1>พัฒน์นรี แสนทวีสุข</h1>
+    
+    <p>ยินดีต้อนรับสู่ Portfolio ของฉัน</p>
+
+    <!-- ลิงก์สำหรับกดไปหน้าต่อไป -->
+    <a href="about.html" class="btn">คลิกเพื่อดูข้อมูลเพิ่มเติม</a>
 
 </body>
 </html>
