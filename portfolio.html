@@ -1,38 +1,342 @@
-หน้าสะสมผลงานตัวอย่าง (โค้ด)
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>แฟ้มสะสมงานของฉัน</title>
-    <style>
-        body { font-family: sans-serif; background-color: #f4f7f6; text-align: center; padding: 30px; }
-        .container { max-width: 800px; margin: 0 auto; }
-        .project-card { background: white; padding: 20px; margin: 20px 0; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: left; }
-        .btn { display: inline-block; background: #2c3e50; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 20px; }
-    </style>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>เกียรติบัตร | Portfolio</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box
+}
+
+html{
+scroll-behavior:smooth
+}
+
+body{
+font-family:Arial,"Noto Sans Thai",sans-serif;
+background:#f5f5f5;
+color:#222
+}
+
+nav{
+height:75px;
+padding:0 7%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#fff;
+border-bottom:1px solid #ddd;
+position:sticky;
+top:0;
+z-index:10
+}
+
+.logo{
+font-weight:bold;
+letter-spacing:3px
+}
+
+.links{
+display:flex;
+gap:30px
+}
+
+.links a{
+text-decoration:none;
+color:#777;
+font-size:15px
+}
+
+.links a:hover,
+.links .selected{
+color:#111;
+font-weight:bold
+}
+
+.content{
+max-width:1100px;
+margin:auto;
+padding:70px 25px
+}
+
+.header{
+text-align:center;
+margin-bottom:55px
+}
+
+.header small{
+letter-spacing:4px;
+color:#888
+}
+
+.header h1{
+font-size:60px;
+margin:10px 0
+}
+
+.line{
+width:80px;
+height:3px;
+background:#222;
+margin:20px auto
+}
+
+.header p{
+color:#777
+}
+
+.certificates{
+display:flex;
+flex-direction:column;
+gap:45px
+}
+
+.certificate{
+background:#fff;
+border-radius:20px;
+overflow:hidden;
+border:1px solid #ddd;
+box-shadow:0 8px 30px #00000010
+}
+
+.certificate img{
+display:block;
+width:100%;
+max-height:700px;
+object-fit:contain;
+background:#eee
+}
+
+.cert-info{
+padding:25px 30px
+}
+
+.cert-info small{
+color:#999;
+letter-spacing:3px
+}
+
+.cert-info h2{
+margin:8px 0 10px;
+font-size:23px
+}
+
+.back{
+text-align:center;
+margin-top:55px
+}
+
+.btn{
+display:inline-flex;
+align-items:center;
+gap:18px;
+padding:15px 28px;
+border-radius:50px;
+background:#222;
+color:#fff;
+font-size:16px;
+text-decoration:none;
+transition:.3s
+}
+
+.btn:hover{
+background:#555;
+transform:translateY(-3px)
+}
+
+footer{
+text-align:center;
+padding:35px;
+background:#222;
+color:#aaa;
+font-size:13px
+}
+
+@media(max-width:750px){
+
+nav{
+padding:0 15px
+}
+
+.logo{
+display:none
+}
+
+.links{
+gap:15px;
+width:100%;
+justify-content:center
+}
+
+.links a{
+font-size:12px
+}
+
+.header h1{
+font-size:42px
+}
+
+.certificate img{
+max-height:none;
+width:100%
+}
+
+}
+</style>
+
 </head>
+
 <body>
 
-    <div class="container">
-        <h1>📁 แฟ้มสะสมงาน (Portfolio)</h1>
-        <p>นี่คือพื้นที่รวบรวมผลงานและกิจกรรมที่ภูมิใจครับ</p>
+<nav>
 
-        <!-- กล่องผลงานชิ้นที่ 1 -->
-        <div class="project-card">
-            <h3>1. โครงงาน/ชิ้นงานวิทยาศาสตร์คำนวณ</h3>
-            <p>รายละเอียดชิ้นงาน: เขียนอธิบายสั้นๆ ว่าทำอะไร ได้เรียนรู้อะไรจากงานนี้บ้าง</p>
-        </div>
+<div class="logo">
+PORTFOLIO
+</div>
 
-        <!-- กล่องผลงานชิ้นที่ 2 -->
-        <div class="project-card">
-            <h3>2. กิจกรรม/เกียรติบัตรที่ได้รับ</h3>
-            <p>รายละเอียดชิ้นงาน: เข้าร่วมการประกวด หรือกิจกรรมของโรงเรียน...</p>
-        </div>
+<div class="links">
 
-        <!-- ปุ่มกดกลับหน้าแรก -->
-        <a href="index.html" class="btn">🔙 กลับหน้าแรก</a>
-    </div>
+<a href="index.html">
+Home
+</a>
+
+<a href="about.html">
+About Me
+</a>
+
+<a href="portfolio.html" class="selected">
+Portfolio
+</a>
+
+</div>
+
+</nav>
+
+<div class="content">
+
+<div class="header">
+
+<small>
+MY ACHIEVEMENTS
+</small>
+
+<h1>
+เกียรติบัตร
+</h1>
+
+<div class="line"></div>
+
+<p>
+รวบรวมเกียรติบัตรและผลงานที่ได้รับจากกิจกรรมต่าง ๆ
+</p>
+
+</div>
+
+<div class="certificates">
+
+<div class="certificate">
+
+<img src="https://i.postimg.cc/wMKh309Z/IMG-0856.jpg" alt="เกียรติบัตรใบที่ 1">
+
+<div class="cert-info">
+
+<small>01</small>
+
+<h2>
+เกียรติบัตรใบที่ 1
+</h2>
+
+</div>
+
+</div>
+
+<div class="certificate">
+
+<img src="https://i.postimg.cc/SQ86HFrL/IMG-0859.jpg" alt="เกียรติบัตรใบที่ 2">
+
+<div class="cert-info">
+
+<small>02</small>
+
+<h2>
+เกียรติบัตรใบที่ 2
+</h2>
+
+</div>
+
+</div>
+
+<div class="certificate">
+
+<img src="https://i.postimg.cc/wjxDttdh/IMG-0860.jpg" alt="เกียรติบัตรใบที่ 3">
+
+<div class="cert-info">
+
+<small>03</small>
+
+<h2>
+เกียรติบัตรใบที่ 3
+</h2>
+
+</div>
+
+</div>
+
+<div class="certificate">
+
+<img src="https://i.postimg.cc/5t6v3ZyY/IMG-0861.jpg" alt="เกียรติบัตรใบที่ 4">
+
+<div class="cert-info">
+
+<small>04</small>
+
+<h2>
+เกียรติบัตรใบที่ 4
+</h2>
+
+</div>
+
+</div>
+
+<div class="certificate">
+
+<img src="https://i.postimg.cc/h49mp8Dh/IMG-0858.jpg" alt="เกียรติบัตรใบที่ 5">
+
+<div class="cert-info">
+
+<small>05</small>
+
+<h2>
+เกียรติบัตรใบที่ 5
+</h2>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="back">
+
+<a href="about.html" class="btn">
+← กลับไป About Me
+</a>
+
+</div>
+
+</div>
+
+<footer>
+© 2026 Portfolio | โรงเรียนบ้านบึง"อุตสาหกรรมนุเคราะห์"
+</footer>
 
 </body>
+
 </html>
