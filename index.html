@@ -1,50 +1,111 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio ของฉัน</title>
-    <style>
-        /* ตกแต่งหน้าเว็บให้ดูสวยงามเบื้องต้น */
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f9;
-            margin-top: 50px;
-        }
-        .profile-img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%; /* ทำให้รูปเป็นวงกลม */
-            object-fit: cover;
-            border: 3px solid #333;
-        }
-        .btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .btn:hover {
-            background-color: #0056b3;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>แฟ้มสะสมผลงาน | Portfolio</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+font-family:Arial,"Noto Sans Thai",sans-serif;
+background:#f5f5f5;
+color:#222
+}
+#home{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:30px;
+background:
+radial-gradient(circle at top left,#fff,transparent 35%),
+linear-gradient(135deg,#eee,#fff,#ddd)
+}
+.home-content{max-width:1000px}
+.school{
+font-size:20px;
+letter-spacing:2px;
+color:#555;
+margin-bottom:30px
+}
+.home-title{
+font-size:clamp(55px,9vw,120px);
+font-weight:800;
+letter-spacing:4px;
+line-height:1.1
+}
+.subtitle{
+font-size:18px;
+letter-spacing:8px;
+color:#777;
+margin-top:20px
+}
+.line{
+width:80px;
+height:3px;
+background:#222;
+margin:30px auto
+}
+.btn{
+display:inline-flex;
+align-items:center;
+gap:18px;
+padding:15px 28px;
+border:0;
+border-radius:50px;
+background:#222;
+color:#fff;
+font-size:16px;
+text-decoration:none;
+transition:.3s
+}
+.btn:hover{
+background:#555;
+transform:translateY(-3px)
+}
+.btn span{font-size:22px}
+
+@media(max-width:750px){
+.home-title{font-size:52px}
+.school{
+font-size:15px;
+line-height:1.7
+}
+}
+</style>
 </head>
+
 <body>
 
-    <!-- เปลี่ยนรูปภาพตรงนี้ โดยเปลี่ยน profile.jpg เป็นชื่อไฟล์รูปของคุณ -->
-    <img src="profile.jpg" alt="รูปโปรไฟล์ของฉัน" class="profile-img">
+<section id="home">
 
-    <!-- เปลี่ยนชื่อและนามสกุลของคุณตรงนี้ -->
-    <h1>พัฒน์นรี แสนทวีสุข</h1>
-    
-    <p>ยินดีต้อนรับสู่ Portfolio ของฉัน</p>
+<div class="home-content">
 
-    <!-- ลิงก์สำหรับกดไปหน้าต่อไป -->
-    <a href="about.html" class="btn">คลิกเพื่อดูข้อมูลเพิ่มเติม</a>
+<p class="school">
+โรงเรียนบ้านบึง"อุตสาหกรรมนุเคราะห์"
+</p>
+
+<h1 class="home-title">
+แฟ้มสะสมผลงาน
+</h1>
+
+<p class="subtitle">
+PORTFOLIO
+</p>
+
+<div class="line"></div>
+
+<a href="about.html" class="btn">
+เข้าสู่แฟ้มสะสมผลงาน
+<span>→</span>
+</a>
+
+</div>
+
+</section>
 
 </body>
 </html>
