@@ -1,14 +1,112 @@
-## 📬 ช่องทางการติดต่อ (Contact Me)
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ช่องทางการติดต่อ</title>
 
-คุณสามารถติดต่อพูดคุย หรือสอบถามเพิ่มเติมได้ตามช่องทางด้านล่างนี้ครับ:
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
 
-- 📧 **Email:** [your.email@example.com](mailto:your.email@example.com)
-- 💼 **LinkedIn:** [ชื่อโปรไฟล์ของคุณ](https://linkedin.com/in/yourprofile)
-- 🌐 **Website:** [yourwebsite.com](https://yourwebsite.com)
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f5f7fb;
+    }
 
----
-<!-- หรือถ้าอยากได้ปุ่มไอคอน (Badges) สีสันสวยงาม สามารถใช้โค้ดด้านล่างนี้ -->
+    .contact-box {
+      width: 90%;
+      max-width: 500px;
+      padding: 40px;
+      background: white;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
 
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your.email@example.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/yourprofile)
-[![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://facebook.com/yourprofile)
+    .contact-box h1 {
+      margin-bottom: 10px;
+      color: #222;
+    }
+
+    .contact-box p {
+      margin-bottom: 30px;
+      color: #666;
+    }
+
+    .contact-link {
+      display: block;
+      margin: 15px 0;
+      padding: 15px;
+      border-radius: 12px;
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .contact-link:hover {
+      transform: translateY(-3px);
+      opacity: 0.9;
+    }
+
+    .email {
+      background: #e74c3c;
+    }
+
+    .facebook {
+      background: #1877f2;
+    }
+
+    .line {
+      background: #06c755;
+    }
+
+    .github {
+      background: #24292f;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="contact-box">
+
+    <h1>📩 ติดต่อเรา</h1>
+    <p>สามารถติดต่อเราได้ผ่านช่องทางด้านล่าง</p>
+
+    <a class="contact-link email"
+       href="mailto:your@email.com">
+      📧 Email
+    </a>
+
+    <a class="contact-link facebook"
+       href="https://facebook.com/yourusername"
+       target="_blank">
+      💙 Facebook
+    </a>
+
+    <a class="contact-link line"
+       href="https://line.me/ti/p/~yourlineid"
+       target="_blank">
+      💚 LINE
+    </a>
+
+    <a class="contact-link github"
+       href="https://github.com/yourusername"
+       target="_blank">
+      🐙 GitHub
+    </a>
+
+  </div>
+
+</body>
+</html>
