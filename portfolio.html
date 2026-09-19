@@ -9,6 +9,7 @@
 <title>เกียรติบัตร | Portfolio</title>
 
 <style>
+
 *{
 margin:0;
 padding:0;
@@ -24,6 +25,8 @@ font-family:Arial,"Noto Sans Thai",sans-serif;
 background:#f5f5f5;
 color:#222
 }
+
+/* NAVIGATION */
 
 nav{
 height:75px;
@@ -51,7 +54,8 @@ gap:30px
 .links a{
 text-decoration:none;
 color:#777;
-font-size:15px
+font-size:15px;
+transition:.3s
 }
 
 .links a:hover,
@@ -59,6 +63,8 @@ font-size:15px
 color:#111;
 font-weight:bold
 }
+
+/* CONTENT */
 
 .content{
 max-width:1100px;
@@ -91,6 +97,8 @@ margin:20px auto
 .header p{
 color:#777
 }
+
+/* CERTIFICATES */
 
 .certificates{
 display:flex;
@@ -128,6 +136,8 @@ margin:8px 0 10px;
 font-size:23px
 }
 
+/* BUTTON */
+
 .back{
 text-align:center;
 margin-top:55px
@@ -136,6 +146,7 @@ margin-top:55px
 .btn{
 display:inline-flex;
 align-items:center;
+justify-content:center;
 gap:18px;
 padding:15px 28px;
 border-radius:50px;
@@ -151,6 +162,18 @@ background:#555;
 transform:translateY(-3px)
 }
 
+/* CONTACT BUTTON */
+
+.contact-btn{
+background:#06c755;
+}
+
+.contact-btn:hover{
+background:#05a847;
+}
+
+/* FOOTER */
+
 footer{
 text-align:center;
 padding:35px;
@@ -158,6 +181,8 @@ background:#222;
 color:#aaa;
 font-size:13px
 }
+
+/* MOBILE */
 
 @media(max-width:750px){
 
@@ -189,11 +214,14 @@ width:100%
 }
 
 }
+
 </style>
 
 </head>
 
 <body>
+
+<!-- NAVIGATION -->
 
 <nav>
 
@@ -215,9 +243,16 @@ About Me
 Portfolio
 </a>
 
+<a href="contact.html">
+Contact
+</a>
+
 </div>
 
 </nav>
+
+
+<!-- CONTENT -->
 
 <div class="content">
 
@@ -239,11 +274,20 @@ MY ACHIEVEMENTS
 
 </div>
 
+
+<!-- CERTIFICATE LIST -->
+
 <div class="certificates">
+
+
+<!-- ใบที่ 1 -->
 
 <div class="certificate">
 
-<img src="2.png.jpg" alt="เกียรติบัตรใบที่ 1">
+<img
+src="2.png.jpg"
+alt="เกียรติบัตรใบที่ 1"
+>
 
 <div class="cert-info">
 
@@ -257,9 +301,15 @@ MY ACHIEVEMENTS
 
 </div>
 
+
+<!-- ใบที่ 2 -->
+
 <div class="certificate">
 
-<img src="1.jpg" alt="เกียรติบัตรใบที่ 2">
+<img
+src="1.jpg"
+alt="เกียรติบัตรใบที่ 2"
+>
 
 <div class="cert-info">
 
@@ -273,25 +323,36 @@ MY ACHIEVEMENTS
 
 </div>
 
+
+<!-- ใบที่ 3 -->
+
 <div class="certificate">
 
-<img src="3.png.jpg" alt="เกียรติบัตรใบที่ 3">
+<img
+src="3.png.jpg"
+alt="เกียรติบัตรใบที่ 3"
+>
 
 <div class="cert-info">
 
 <small>03</small>
 
 <h2>
-
 </h2>
 
 </div>
 
 </div>
 
+
+<!-- ใบที่ 4 -->
+
 <div class="certificate">
 
-<img src="4.png.jpg" alt="เกียรติบัตรใบที่ 4">
+<img
+src="4.png.jpg"
+alt="เกียรติบัตรใบที่ 4"
+>
 
 <div class="cert-info">
 
@@ -305,9 +366,15 @@ MY ACHIEVEMENTS
 
 </div>
 
+
+<!-- ใบที่ 5 -->
+
 <div class="certificate">
 
-<img src="chinese.jpg" alt="เกียรติบัตรใบที่ 5">
+<img
+src="chinese.jpg"
+alt="เกียรติบัตรใบที่ 5"
+>
 
 <div class="cert-info">
 
@@ -323,18 +390,26 @@ MY ACHIEVEMENTS
 
 </div>
 
+
+<!-- CONTACT BUTTON -->
+
 <div class="back">
 
-<a href="contact.html" class="btn">
-← contact.html
+<a href="contact.html" class="btn contact-btn">
+📩 ช่องทางการติดต่อ
 </a>
 
 </div>
 
 </div>
 
+
+<!-- FOOTER -->
+
 <footer>
+
 © 2026 Portfolio | โรงเรียนบ้านบึง"อุตสาหกรรมนุเคราะห์"
+
 </footer>
 
 </body>
